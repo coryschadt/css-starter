@@ -1,0 +1,93 @@
+/*=================================================
+Print Styles
+=================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* http://cbrac.co/Q6s1o2 */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+        margin: 5px 0;
+    }
+    @page {
+        margin: 0.5cm;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+    body {
+        background:#FFF;
+        color:#000;
+        font-size: 8pt;
+        font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+    }
+    div {
+        margin: 1pt 0;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        font-family: Helvetica, Arial, "MS Trebuchet", sans-serif;
+    }
+    h1 {
+        font-size: 12pt;
+        margin: 0 0 10pt 0;
+    }
+    h2 {
+        font-size: 10pt;
+        margin: 0 0 10pt 0;
+    }
+    h3 {
+        font-size: 8pt;
+        margin: 0 0 10pt 0;
+    }
+    h4 {
+        font-size: 6pt;
+        margin: 0 0 10pt 0;
+    }
+    h5 {
+        font-size: 5pt;
+        margin: 0 0 10pt 0;
+    }
+
+    body:before {
+        content:"Site Name";
+        color: #666;
+        border-bottom: solid 4px $primary-color;
+        display: block;
+        font-size: 15pt;
+    }
+}

@@ -1,0 +1,23 @@
+/*=================================================
+Containers
+=================================================== */
+
+.wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 100%;
+	max-width: $site-width;
+	align-items: stretch;
+	margin: 0 auto;
+	background-color: $white;
+	min-height: 100vh;
+	position: relative;
+}
+
+/* Content Containers */
+.container {
+	position: relative;
+	width: 90%;
+	max-width: $container-width;
+	margin: 0 auto;
+}
